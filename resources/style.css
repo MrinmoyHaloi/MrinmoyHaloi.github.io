@@ -1,12 +1,28 @@
-.progress-bar{
-  background-color: rgb(44, 44, 44) !important;
-}
-#navbar{
-  padding: 5px 0;
+.hover-opacity{
   transition: 0.4s;
 }
-.pinned-nav{
+.hover-opacity:hover{
+  opacity: 70%;
+}
+footer{
+  background-color: black;
+}
+.progress-bar {
+  width: 0%;
+  background-color: rgb(44, 44, 44) !important;
+}
+#navbar {
+  padding: 5px 0;
+  transition: 0.4s;
+  background-color: white;
+}
+.pinned-nav {
+  background-color: rgba(1, 1, 1, 0.7) !important;
+  color:white !important;
   padding: 10px 0 !important;
+}
+.pinned-nav a{
+  color: white !important;
 }
 .progress {
   margin: 0.4rem 0 0.7rem 0;
@@ -16,7 +32,7 @@
   color: #1e1e1e;
   font-size: 1.1rem;
 }
-.width-100{
+.width-100 {
   width: 100%;
 }
 #home .col {
@@ -122,11 +138,11 @@ html {
   line-height: 1.8;
   scroll-behavior: smooth;
 }
-#about{
+#about {
   padding: 4rem 4.5rem;
 }
-@media (max-width:576px) {
-  #about{
+@media (max-width: 576px) {
+  #about {
     padding: 4rem 1rem;
   }
 }
