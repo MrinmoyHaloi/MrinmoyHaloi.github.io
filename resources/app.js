@@ -3,15 +3,7 @@ var navbar = document.getElementById("navbar");
 var progress_bar = document.getElementsByClassName("progress-bar")
 var body = document.getElementsByTagName("body");
 
-// function func() {
-//   if (window.pageYOffset >= 90){
-//       progress_bar[0].style.width = "300px";
-//       progress_bar[1].style.width = "300px";
-//       progress_bar[2].style.width = "300px";
-//   }else{
-//       for(var i = 0; i < divs.length; i++) {
-//           divs[i].style.width = "70px"
-// }}
+
 function func() {
   if (window.pageYOffset >= 500){
     progress_bar[0].style.width = `${progress_bar[0].getAttribute("aria-valuenow")}%`;
