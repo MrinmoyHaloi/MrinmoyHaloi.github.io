@@ -5,7 +5,7 @@ var body = document.getElementsByTagName("body");
 
 
 function func() {
-  if (window.pageYOffset >= 500){
+  if (window.pageYOffset >= 450){
     progress_bar[0].style.width = `${progress_bar[0].getAttribute("aria-valuenow")}%`;
     progress_bar[1].style.width = `${progress_bar[1].getAttribute("aria-valuenow")}%`;
     progress_bar[2].style.width = `${progress_bar[2].getAttribute("aria-valuenow")}%`;
@@ -13,7 +13,6 @@ function func() {
     progress_bar[4].style.width = `${progress_bar[4].getAttribute("aria-valuenow")}%`;
   }
 }
-
 
 function myFunction() {
   if (window.pageYOffset <= 90) {
@@ -29,7 +28,6 @@ function myFunction() {
 }
 var typed = new Typed(".element", {
   strings: [
-    "",
     "Web developer",
     "Software engineer",
     "Freelancer",
@@ -38,5 +36,5 @@ var typed = new Typed(".element", {
   ],
   typeSpeed: 80,
   backSpeed: 10,
-  loop: true,
+  loop: true
 })

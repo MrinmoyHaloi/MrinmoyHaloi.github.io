@@ -1,3 +1,10 @@
+.navbar-toggler:focus{
+  box-shadow: 0 0 0 0.1rem !important;
+}
+#home .col span{
+  font-size: 1.2em;
+}
+
 .hover-opacity{
   transition: 0.4s;
 }
@@ -17,12 +24,7 @@ footer{
   background-color: white;
 }
 .pinned-nav {
-  background-color: rgba(1, 1, 1, 0.7) !important;
-  color:white !important;
   padding: 10px 0 !important;
-}
-.pinned-nav a{
-  color: white !important;
 }
 .progress {
   margin: 0.4rem 0 0.7rem 0;
@@ -34,14 +36,6 @@ footer{
 }
 .width-100 {
   width: 100%;
-}
-#home .col {
-  margin-left: 5rem;
-}
-@media (max-width: 768px) {
-  #home .col {
-    margin-left: 3.5rem;
-  }
 }
 .button-rounded {
   background: #000000;
@@ -55,6 +49,17 @@ footer{
   background-color: #353535;
   color: #fff;
   transition: all 500ms ease;
+}
+.hire-button{
+  background: black;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  transition: 0.5s;
+}
+.hire-button:hover{
+  color: white;
+  background: #353535;
 }
 .socials i {
   color: black;
@@ -94,10 +99,11 @@ footer{
 #to-top {
   border-radius: 100%;
   border: 1px solid black;
-  opacity: 70%;
+  opacity: 75%;
   transition: 0.3s;
 }
 .to-top-invisible {
+  transform: translateY(50%);
   opacity: 0% !important;
 }
 #to-top i {
@@ -156,10 +162,9 @@ html {
 }
 
 .bgimg-1 {
-  background-image: url("./home.webp");
   filter: grayscale(30%);
   min-height: 500px;
-  background-size: cover;
+  background-color: black;
 }
 
 .bgimg-2 {
