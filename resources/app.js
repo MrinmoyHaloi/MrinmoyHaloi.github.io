@@ -1,8 +1,6 @@
 var to_top = document.getElementById("to-top");
 var navbar = document.getElementById("navbar");
 var progress_bar = document.getElementsByClassName("progress-bar")
-var body = document.getElementsByTagName("body");
-
 
 function func() {
   if (window.pageYOffset >= 450){
@@ -26,15 +24,17 @@ function myFunction() {
     navbar.classList.remove("pinned-nav");
   }
 }
+var i_am = "I am a "
 var typed = new Typed(".element", {
   strings: [
-    "Web developer",
-    "Software engineer",
-    "Freelancer",
-    "Graphic designer",
-    "Video Editor",
+    `${i_am} Web developer`,
+    `${i_am} Software developer`,
+    `${i_am} Freelancer`,
+    `${i_am} Graphics designer`,
+    `${i_am} Video Editor`,
   ],
   typeSpeed: 80,
   backSpeed: 10,
-  loop: true
+  loop: true,
+  smartBackspace:true
 })
