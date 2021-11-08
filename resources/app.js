@@ -1,14 +1,16 @@
-var to_top = document.getElementById("to-top");
-var navbar = document.getElementById("navbar");
-var progress_bar = document.getElementsByClassName("progress-bar")
+let to_top = document.getElementById("to-top");
+let navbar = document.getElementById("navbar");
+let progress_bar = Array.from(document.getElementsByClassName("progress-bar"))
+const date = new Date();
 
-function func() {
+//sets the current year in the footer
+document.getElementById("year").innerHTML = date.getFullYear();
+
+function animate_progress() {
   if (window.pageYOffset >= 450){
-    progress_bar[0].style.width = `${progress_bar[0].getAttribute("aria-valuenow")}%`;
-    progress_bar[1].style.width = `${progress_bar[1].getAttribute("aria-valuenow")}%`;
-    progress_bar[2].style.width = `${progress_bar[2].getAttribute("aria-valuenow")}%`;
-    progress_bar[3].style.width = `${progress_bar[3].getAttribute("aria-valuenow")}%`;
-    progress_bar[4].style.width = `${progress_bar[4].getAttribute("aria-valuenow")}%`;
+    progress_bar.forEach(element => {
+        element.style.width = `${element.getAttribute("aria-valuenow")}%`;
+    });
   }
 }
 

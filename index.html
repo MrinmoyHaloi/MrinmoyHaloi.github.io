@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Mrinmoy Haloi</title>
     <meta charset="UTF-8" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta name="description" content="Portfolio website of Mrinmoy Haloi. Full stack developer">
     <link
-      rel="shortcut icon"
-      href="resources/favicon.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="resources/style.css" />
+        rel="shortcut icon"
+        href="resources/favicon.png"
+        type="image/x-icon"/>
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/> -->
+    <link rel="stylesheet" href="resources/style.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</noscript>
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 
-	<meta property="og:url" content="https://mrinmoy.cf/">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Mrinmoy Haloi">
-	<meta property="og:description" content="Portfolio website of Mrinmoy Haloi. Full stack developer ">
-	<meta property="og:image" content="https://i.ibb.co/P59d5X9/Untitled.png">
+    <meta property="og:url" content="https://mrinmoy.cf/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mrinmoy Haloi">
+    <meta property="og:description" content="Portfolio website of Mrinmoy Haloi. Full stack developer ">
+    <meta property="og:image" content="https://i.ibb.co/P59d5X9/Untitled.png">
 
-	<!-- Twitter Meta Tags -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta property="twitter:domain" content="mrinmoy.cf">
-	<meta property="twitter:url" content="https://mrinmoy.cf/">
-	<meta name="twitter:title" content="Mrinmoy Haloi">
-	<meta name="twitter:description" content="Portfolio website of Mrinmoy Haloi. Full stack developer ">
-	<meta name="twitter:image" content="https://i.ibb.co/P59d5X9/Untitled.png">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="mrinmoy.cf">
+    <meta property="twitter:url" content="https://mrinmoy.cf/">
+    <meta name="twitter:title" content="Mrinmoy Haloi">
+    <meta name="twitter:description" content="Portfolio website of Mrinmoy Haloi. Full stack developer ">
+    <meta name="twitter:image" content="https://i.ibb.co/P59d5X9/Untitled.png">
 
-  </head>
-
-  <body onload="myFunction()" onscroll="myFunction(),func()">
+</head>
+  <body onload="myFunction()" onscroll="myFunction(),animate_progress()">
     <nav
       class="navbar navbar-expand-sm navbar-light shadow fixed-top text-center"
-      id="navbar"
-    >
+      id="navbar">
       <div class="container-fluid" style="position: sticky">
         <a class="navbar-brand" href="#">Mrinmoy Haloi</a>
         <button
@@ -47,8 +50,7 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -86,7 +88,7 @@
         </div>
       </div>
       <!-- about me -->
-      <div class="row" id="about">
+      <div class="container-fluid" id="about">
         <h1 class="text-center"><strong>ABOUT</strong></h1>
         <div class="row p-md-3 mt-4 container">
           <div class="col-sm-12">
@@ -100,9 +102,8 @@
                           src="./resources/profile.webp"
                           class="img-fluid rounded b-shadow-a"
                           alt="profile-pic"
-                          width="350"
-                          height="350"
-                        />
+                          width="340"
+                          height="340"/>
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-7">
@@ -127,96 +128,124 @@
                     </div>
                   </div>
                   <div>
-                    <p class="title-s">Skills</p>
+                    <p class="title-s"><i class="fas fa-code"></i> Skills</p>
+                    <i class="fab fa-html5"></i>
                     <span>HTML</span>
                     <span
                       class="pull-right purecounter"
                       data-purecounter-duration="1.5"
                       data-purecounter-start="0"
-                      data-purecounter-end="85"
-                    ></span
-                    >%
+                      data-purecounter-end="85"></span>%
                     <div class="progress">
                       <div
                         class="progress-bar"
                         role="progressbar"
+                        aria-label="progress bar of the skill"
                         style="transition: 0.4s"
                         aria-valuenow="85"
                         aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                        aria-valuemax="100"></div>
                     </div>
-                    <span>CSS3</span>
+                    <i class="fab fa-css3"></i>
+                    <span>CSS</span>
                     <span
                       class="pull-right purecounter"
                       data-purecounter-duration="1.5"
                       data-purecounter-start="0"
-                      data-purecounter-end="55"
-                    ></span
-                    >%
+                      data-purecounter-end="65"></span>%
                     <div class="progress">
                       <div
                         class="progress-bar"
                         role="progressbar"
+                        aria-label="progress bar of the skill"
                         style="transition: 0.6s"
-                        aria-valuenow="55"
+                        aria-valuenow="65"
                         aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                        aria-valuemax="100"></div>
                     </div>
+                    <i class="fab fa-sass"></i>
+                    <span>SASS/SCSS</span>
+                    <span
+                      class="pull-right purecounter"
+                      data-purecounter-duration="1.5"
+                      data-purecounter-start="0"
+                      data-purecounter-end="60"></span>%
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-label="progress bar of the skill"
+                        style="transition: 0.6s"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                    <i class="fab fa-bootstrap"></i>
                     <span>BOOTSTRAP</span>
                     <span
                       class="pull-right purecounter"
                       data-purecounter-duration="1.5"
                       data-purecounter-start="0"
-                      data-purecounter-end="75"
-                    ></span
-                    >%
+                      data-purecounter-end="75"></span>%
                     <div class="progress">
                       <div
                         class="progress-bar"
                         role="progressbar"
+                        aria-label="progress bar of the skill"
                         style="transition: 0.8s"
                         aria-valuenow="75"
                         aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                        aria-valuemax="100"></div>
                     </div>
+                    <i class="fab fa-js"></i>
                     <span>JAVASCRIPT</span>
                     <span
                       class="pull-right purecounter"
                       data-purecounter-duration="1.5"
                       data-purecounter-start="0"
-                      data-purecounter-end="60"
-                    ></span
-                    >%
+                      data-purecounter-end="70"></span>%
                     <div class="progress">
                       <div
                         class="progress-bar"
                         role="progressbar"
+                        aria-label="progress bar of the skill"
                         style="transition: 1.1s"
-                        aria-valuenow="60"
+                        aria-valuenow="70"
                         aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                        aria-valuemax="100"></div>
                     </div>
+                    <i class="fab fa-python"></i>
                     <span>PYTHON</span>
                     <span
                       class="pull-right purecounter"
                       data-purecounter-duration="1.5"
                       data-purecounter-start="0"
-                      data-purecounter-end="80"
-                    ></span
-                    >%
+                      data-purecounter-end="80"></span>%
                     <div class="progress">
                       <div
                         class="progress-bar"
                         role="progressbar"
+                        aria-label="progress bar of the skill"
                         style="transition: 1.5s"
                         aria-valuenow="80"
                         aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
+                        aria-valuemax="100"></div>
+                    </div>
+                    <span>SVELTE</span>
+                    <span
+                      class="pull-right purecounter"
+                      data-purecounter-duration="1.7"
+                      data-purecounter-start="0"
+                      data-purecounter-end="50"></span>%
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-label="progress bar of the skill"
+                        style="transition: 1.1s"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
@@ -254,81 +283,73 @@
         <div class="d-flex justify-content-center">
           <span
             class="wide text-light align-self-center portfolio-head"
-            style="text-shadow: 3px 3px 5px black; font-size: 36px"
-            >PORTFOLIO</span
-          >
+            style="text-shadow: 1px 2px 5px black; font-size: 36px">PORTFOLIO</span>
         </div>
       </div>
-      <div class="container-fluid p-4 text-center" id="portfolio">
-        <h3>Projects</h3>
+      <div class="container-fluid p-5 text-center" id="portfolio">
+        <h3 class="mt-3">Projects</h3>
         <p>
           <em>Here are some of the projects that have I worked on. <br /> </em>
         </p>
-        <br />
-        <div class="row g-1 g-md-3 mb-3 justify-content-evenly">
-          <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+        <br/>
+        <div class="portfolio-container">
+          <div class="flex-element">
             <a
-              href="https://github.com/MrinmoyHaloi/Lambda-Code"
+              href="https://github.com/Lambda-Code-Organization/Lambda-Code"
               class="text-dark"
               rel="noopener"
-              target="_blank"
-            >
+              target="_blank">
               <img alt="Lambda Code"
-              src=https://opengraph.githubassets.com/2d3d616ffdca064be080d01f6755f08a191d5d039128e595deae1c5d6a451165/MrinmoyHaloi/Lambda-Code
+              src="https://opengraph.githubassets.com/02cf124818c258d30520e8492758429dbe6eb8b840dbd5022d8d937acdc9e0f0/Lambda-Code-Organization/Lambda-Code"
               loading=lazy class="width-100 hover-opacity">
+              <b>Lambda Code </b> - A programming language
             </a>
           </div>
-          <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+          <div class="flex-element">
             <a
               href="https://github.com/Charchit-beginner/Stackover-Flow-Clone"
               class="text-dark"
               rel="noopener"
-              target="_blank"
-            >
+              target="_blank">
               <img
                 alt="Stackover Flow 2.0"
                 src="https://opengraph.githubassets.com/fd8efc42bc230645486d5b01275b1bb3a7cf9adacbf1acbb7f913028c1d6908d/Charchit-beginner/Stackover-Flow-Clone"
                 loading="lazy"
-                class="width-100 hover-opacity"
-              />
+                class="width-100 hover-opacity"/>
+                <b>Stackover Flow 2.0</b> - A Stackoverflow clone
             </a>
           </div>
-          <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+          <div class="flex-element">
             <a
               href="https://github.com/mrinmoyhaloi/MrinmoyHaloi.github.io/tree/portfolio"
               rel="noopener"
               class="text-dark"
-              target="_blank"
-            >
+              target="_blank">
               <img
                 alt="mrinmoy.cf"
                 src="https://opengraph.githubassets.com/46e3fabad3ba175a2d0f56b5001f2044f6c4560ff5ac6b3632fa63ec16c84f2e/MrinmoyHaloi/MrinmoyHaloi.github.io"
                 loading="lazy"
-                class="width-100 hover-opacity"
-              />
+                class="width-100 hover-opacity"/>
+                <b>Mrinmoy.cf</b> - My personal website
             </a>
           </div>
         </div>
-        <h4>
+        <h4 class="mt-4">
           <a
             href="https://github.com/mrinmoyhaloi"
-            class="text-dark hover-opacity"
-            >More</a
-          >
+            class="text-dark hover-opacity-more">
+            More</a>
         </h4>
       </div>
       <!-- contact -->
       <div class="row bgimg-3">
         <div class="d-flex justify-content-center">
           <span
-            class="wide align-self-center contact-head"
+            class="wide align-self-center text-light contact-head"
             style="
-              text-shadow: 3px 3px 5px black;
+              text-shadow: 1px 2px 5px black;
               font-size: 36px;
-              color: white;
-            "
-            >CONTACT</span
-          >
+            ">CONTACT</span>
         </div>
       </div>
       <div class="container">
@@ -356,11 +377,11 @@
                               type="text"
                               name="name"
                               class="form-control"
-                              id="floatingInput"
+                              id="floatingInputName"
                               placeholder="John doe"
                               required
                             />
-                            <label for="floatingInput" class="ms-3 text-muted"
+                            <label for="floatingInputName" class="ms-3 text-muted"
                               >Name</label
                             >
                           </div>
@@ -369,11 +390,11 @@
                               type="email"
                               name="email"
                               class="form-control"
-                              id="floatingInput"
+                              id="floatingInputEmail"
                               placeholder="name@example.com"
                               required
                             />
-                            <label for="floatingInput" class="ms-3 text-muted"
+                            <label for="floatingInputEmail" class="ms-3 text-muted"
                               >Email address</label
                             >
                           </div>
@@ -382,11 +403,11 @@
                               type="text"
                               name="subject"
                               class="form-control"
-                              id="floatingInput"
+                              id="floatingInputSubject"
                               placeholder="Subject"
                               required
                             />
-                            <label for="floatingInput" class="ms-3 text-muted"
+                            <label for="floatingInputSubject" class="ms-3 text-muted"
                               >Subject</label
                             >
                           </div>
@@ -395,12 +416,12 @@
                               name="message"
                               style="height: 150px"
                               class="form-control"
-                              id="floatingInput"
+                              id="floatingInputMessage"
                               placeholder="your message"
                               required
                               minlength="5"
                             ></textarea>
-                            <label for="floatingInput" class="ms-3 text-muted"
+                            <label for="floatingInputMessage" class="ms-3 text-muted"
                               >Message</label
                             >
                           </div>
@@ -420,8 +441,8 @@
                     <div class="more-info">
                       <p class="lead">
                         If you want to contact me you can send me a message from
-                        the form, or you can directly email me in the email
-                        below. There are also my social media handles below. You
+                        here, or you can directly email me in the email
+                        below. You can find my social media handles below. You
                         can also contact me through them.
                       </p>
                       <ul class="list-ico">
@@ -431,11 +452,9 @@
                         </li>
                         <li>
                           <span class="far fa-envelope"></span>
-                          <a
+                          <a style="word-wrap: break-word;"
                             href="mailto:mhedeetz.business@gmail.com"
-                            class="text-dark"
-                            >mhedeetz.business@gmail.com</a
-                          >
+                            class="text-dark">mhedeetz.business@gmail.com</a>
                         </li>
                       </ul>
                     </div>
@@ -454,7 +473,7 @@
                           <a
                             target="_blank"
                             rel="noopener"
-                            href="https://instagram.com/mhedeetz"
+                            href="https://instagram.com/mrinmoy.2007"
                             ><span class="ico-circle"
                               ><i class="fab fa-instagram"></i></span
                           ></a>
@@ -506,21 +525,18 @@
           position: fixed;
           right: 15px;
           bottom: 15px;
-          background-color: black;
-        "
-      >
+          background-color: black;">
         <i class="fa fa-arrow-up text-light"> </i>
       </a>
       <b class="text-light"
-        >Made with <i class="fa fa-heart text-danger"></i> in india</b
-      >
+        >Made with <i class="fa fa-heart text-danger"></i> in india</b>
       <p class="text-light">
-        Copyright Mrinmoy Haloi 2021 <br />All Rights Reserved
+        Copyright Mrinmoy Haloi <span id="year"></span> <br/>All Rights Reserved
       </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" defer></script>
     <!-- <script src="js/bootstrap.min.js" defer></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- <script src="js/typed.js"></script> -->
     <script src="./resources/app.js"></script>
