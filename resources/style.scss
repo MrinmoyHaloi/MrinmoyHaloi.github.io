@@ -168,6 +168,7 @@ body,html {
 }
 #about {
   padding: 4rem 4.5rem;
+  scroll-padding-top: 10%;
 }
 @media (max-width: 576px) {
   #about {
@@ -184,15 +185,16 @@ body,html {
 .bgimg-1 {
   filter: grayscale(30%);
   min-height: 85vh;
-  background-color: black;
+  background: linear-gradient(to right, #2a2e35, #12181b);
+//   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
 }
 
 .bgimg-2 {
-  @include bg-img("./portfolio.jpg");
+  @include bg-img("./portfolio.webp");
 }
 
 .bgimg-3 {
-  @include bg-img("./contact.jpg");
+  @include bg-img("./contact.webp");
 }
 
 .wide {
