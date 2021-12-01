@@ -12,7 +12,7 @@
 .flex-element {
   flex: 0.3 1 350px;
 }
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 802px) {
   .flex-element {
     flex: 0.5 1 350px;
   }
@@ -35,9 +35,8 @@
   }
 }
 .hover-opacity {
-    transition: 0.3s;
+    transition: 0.1s;
     border: transparent solid 2px;
-    border-radius: 10px;
   &:hover {
     border: #353535 solid 2px;
     opacity: 75%;
@@ -56,9 +55,6 @@ footer {
   width: 0%;
   background-color: rgb(44, 44, 44) !important;
 }
-.width-100 {
-  width: 100%;
-}
 #navbar {
   padding: 5px 0;
   transition: 0.4s;
@@ -68,7 +64,7 @@ footer {
   padding: 8px 0 !important;
 }
 .progress {
-  margin: 0.4rem 0 0.5rem 0;
+  margin: 0.1rem 0 0.5rem 0;
 }
 .title-s {
   font-weight: 600;
@@ -186,7 +182,6 @@ body,html {
   filter: grayscale(30%);
   min-height: 85vh;
   background: linear-gradient(to right, #2a2e35, #12181b);
-//   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
 }
 
 .bgimg-2 {
