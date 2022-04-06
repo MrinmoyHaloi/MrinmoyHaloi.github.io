@@ -9,16 +9,16 @@
   gap: 1rem;
 }
 
-.flex-element {
-  flex: 0.3 1 350px;
+.project {
+  flex: 0.2 1 420px;
 }
 @media screen and (max-width: 802px) {
-  .flex-element {
+  .project {
     flex: 0.5 1 350px;
   }
 }
 @media screen and (max-width: 622px) {
-  .flex-element {
+  .project {
     flex: 0.7 1 350px;
   }
 }

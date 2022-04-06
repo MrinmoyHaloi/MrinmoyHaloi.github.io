@@ -30,14 +30,13 @@ function scrollEvent() {
 let prefix_typedjs = "I am a "
 let typed = new Typed(".element", {
     strings: [
-        `${prefix_typedjs} Web developer`,
-        `${prefix_typedjs} Software developer`,
-        `${prefix_typedjs} Freelancer`,
-        `${prefix_typedjs} Graphics designer`,
-        `${prefix_typedjs} Video Editor`,
+        "Web developer",
+        "Software developer",
+        "Freelancer",
+        "Graphics designer",
+        "Video Editor",
     ],
     typeSpeed: 80,
-    backSpeed: 10,
+    backSpeed: 20,
     loop: true,
-    smartBackspace: true
 })
