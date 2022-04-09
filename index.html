@@ -8,7 +8,7 @@
     <meta name="description" content="Portfolio website of Mrinmoy Haloi. Full stack developer">
     <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="resources/style.min.css" />
-    <link rel="stylesheet" href="resources/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="resources/fontawesome.css">
     <!-- Opengraph meta tags -->
     <meta property="og:url" content="https://mrinmoy.tech/">
@@ -27,7 +27,7 @@
 </head>
 
 <body onload="scrollEvent(), animate_progress()" onscroll="scrollEvent(), animate_progress()">
-    <nav class="navbar navbar-expand-sm navbar-light shadow fixed-top text-center" id="navbar">
+    <nav class="navbar navbar-expand-md navbar-light shadow fixed-top" id="navbar">
         <div class="container-fluid" style="position: sticky">
             <a class="navbar-brand" href="#">Mrinmoy Haloi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -59,25 +59,28 @@
 
     <div class="container-fluid">
         <div class="row bgimg-1 align-items-center" id="home">
-            <div class="col text-light text-center">
-                <h1 style="font-weight: normal; font-size: 2.4rem;">Hi I'm <strong>Mrinmoy Haloi</strong></h1>
-                <span>i am a</span>
-                <strong><span class="element"></span></strong>
+            <div class="text-light mx-md-0 mx-auto">
+                <h4>Hi I'm</h4>
+                <h1>Mrinmoy Haloi</h1>
+                <span style="font-size: calc(1.275rem + .3vw)">i am a
+                    <strong class="element"></strong></span>
+                <br>
+                <a href="#about" class="button-square call-to-action d-inline-block mt-4">Learn more</a>
             </div>
         </div>
         <!-- about me -->
         <div class="container-fluid" id="about">
             <h2 class="text-center"><strong>ABOUT</strong></h2>
-            <div class="row p-md-3 mt-4 container">
+            <div class="row p-md-3 container-fluid">
                 <div class="col-sm-12">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="row mb-4">
-                                <div class="col-sm-6 col-md-12 col-lg-5 mb-3 mb-lg-0">
+                                <div class="col-sm-6 col-md-10 col-lg-5 mb-3 mb-lg-0">
                                     <img src="./resources/profile.webp" class="img-fluid rounded" alt="profile-pic"
                                         width="340" height="340" />
                                 </div>
-                                <div class="col-sm-6 col-md-7">
+                                <div class="col-sm-6 col-md-9 col-lg-7">
                                     <p>
                                         <span class="title-s">Name: </span>
                                         <span>Mrinmoy Haloi</span>
@@ -91,7 +94,7 @@
                                         <span style="word-wrap: break-word;">contact@mrinmoy.tech</span>
                                     </p>
                                     <p>
-                                        <span class="title-s">Language: </span>
+                                        <span class="title-s">Languages: </span>
                                         <span>English, Hindi, Assamese</span>
                                     </p>
                                 </div>
@@ -112,10 +115,10 @@
                                     <i class="fab fa-sass"></i>
                                     SCSS</span>
                                 <span class="pull-right purecounter" data-purecounter-duration="1.5"
-                                    data-purecounter-start="0" data-purecounter-end="65"></span>%
+                                    data-purecounter-start="0" data-purecounter-end="68"></span>%
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-label="progress bar of the skill"
-                                        style="transition: 0.8s" aria-valuenow="65" aria-valuemin="0"
+                                        style="transition: 0.8s" aria-valuenow="68" aria-valuemin="0"
                                         aria-valuemax="100"></div>
                                 </div>
                                 <i class="fab fa-bootstrap"></i>
@@ -156,13 +159,12 @@
                                     Hi I'm Mrinmoy Haloi. I am 14 years old. I enjoy programming so much. When I have
                                     free time, it's great to
                                     indulge in some of my favorite hobbies like watching movies and exploring different
-                                    kinds of technology.
+                                    kinds of new technology.
                                 </p>
                                 <p class="lead">
                                     I am a self-taught programmer and I love to use the internet as my primary source of
-                                    learning tools. I am a full-stack developer. I can develop using
-                                    both front-end and back-end techonologies. I have learnt html, css, js for the
-                                    frontend, and for the backend i have learnt python. I am
+                                    learning tools. I am a full-stack developer. I have learnt html, CSS, JS and Python.
+                                    I am
                                     interested in working on projects with
                                     an open-source focus.
                                 </p>
@@ -174,10 +176,8 @@
         </div>
         <!-- portfolio -->
         <div class="row bgimg-2">
-            <div class="d-flex justify-content-center">
-                <h2 class="wide text-light align-self-center portfolio-head"
-                    style="text-shadow: 1px 2px 5px black; font-size: 36px">PORTFOLIO</h2>
-            </div>
+            <h2 class="wide text-light m-auto portfolio-head"
+                style="text-shadow: 1px 5px 40px black; font-size: 2.5rem; width: max-content;">PORTFOLIO</h2>
         </div>
         <div class="container-fluid p-4 text-center" id="portfolio">
             <h3 class="mt-3">Projects</h3>
@@ -229,12 +229,11 @@
         </div>
         <!-- contact -->
         <div class="row bgimg-3">
-            <div class="d-flex justify-content-center">
-                <h2 class="wide align-self-center text-light contact-head" style="
-              text-shadow: 1px 2px 5px black;
-              font-size: 36px;
+            <h2 class="wide text-light contact-head m-auto" style="
+              text-shadow: 1px 5px 30px black;
+              font-size: 2.5rem;
+              width: max-content;
             ">CONTACT</h2>
-            </div>
         </div>
         <div class="container">
             <div class="row p-5" id="contact">
@@ -247,7 +246,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="contact-mf">
-                        <div id="contact" style="padding: 2rem">
+                        <div style="padding: 2rem">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="title-box-2">
@@ -281,8 +280,8 @@
                                                     <label for="floatingInputMessage"
                                                         class="ms-3 text-muted">Message</label>
                                                 </div>
-                                                <div class="col-md-12 text-start text-sm-center">
-                                                    <button type="submit" class="button-rounded">
+                                                <div class="col-md-12 text-start text-md-center">
+                                                    <button type="submit" class="button-square">
                                                         Send Message
                                                     </button>
                                                 </div>
@@ -328,8 +327,9 @@
                                             </li>
                                         </ul>
                                         <div class="col-md-12">
-                                            <a class="hire-button" href="https://fiverr.com/mrinmoyhaloi"
-                                                target="_blank" rel="noopener">Hire me</a>
+                                            <a class="hire-button button-square d-inline-block"
+                                                href="https://fiverr.com/mrinmoyhaloi" target="_blank"
+                                                rel="noopener">Hire me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -355,7 +355,7 @@
             Copyright Mrinmoy Haloi <span id="year"></span> <br />All Rights Reserved
         </p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.2.1/dist/purecounter_vanilla.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js"></script>
     <script src="./resources/app.js"></script>
