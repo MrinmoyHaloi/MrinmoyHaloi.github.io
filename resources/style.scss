@@ -51,7 +51,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: black;
+    background-color: black;
     transition: 0.5s ease;
     display: block;
     z-index: -1;
@@ -103,6 +103,10 @@ html {
 
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0rem !important;
+}
+
+.navbar-toggler {
+    border-radius: .3em !important;
 }
 
 .hover-opacity {
@@ -227,13 +231,14 @@ html {
 }
 
 .bgimg-1 {
+    margin-top: 55px !important;
     min-height: 85vh;
     background: linear-gradient(to right, #2a2e35, #12181b) !important;
     & h1 {
         font-weight: bolder;
         font-size: 5rem;
         @media screen and (max-width: 575px) {
-            font-size: 4.5rem;
+            font-size: 4rem;
         }
     }
     & > div {
